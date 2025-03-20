@@ -1,1 +1,1 @@
-https://rihosepp31.github.io/rihosepp.github.io/
+https://rihosepp31.github.io/HomePageTest/
