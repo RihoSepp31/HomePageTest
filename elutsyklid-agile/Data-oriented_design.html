@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-Oriented Design</title>
+    <link rel="stylesheet" href="..//css failid/data_oriented_design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Data-Oriented Design</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section>
+            <h2>Kirjeldus</h2>
+            <p>
+                Data-Oriented Design (DOD) on tarkvaraarendusmeetod, mis keskendub <span class="highlight">andmete struktuurile ja voolule</span>, 
+                et maksimeerida arvutusressursside kasutamist. Erinevalt objektorienteeritud lähenemisest, mis keskendub objektidele ja nende funktsioonidele, 
+                seab DOD esikohale andmed ja nende töötlemise tõhususe.
+            </p>
+        </section>
+
+        <!-- Joonis -->
+        <section>
+            <h2>Arendustsükli joonis</h2>
+            <p>
+                Allolev joonis illustreerib Data-Oriented Designi tsüklit:
+            </p>
+            <img src="..//Pildid/data oriented design.jpg" alt="Data-Oriented Design tsükkel" class="responsive-image">
+        </section>
+
+        <!-- Head ja vead -->
+        <section>
+            <h2>Head ja vead</h2>
+            <h3>Head küljed</h3>
+            <ul>
+                <li>Optimeerib mälu- ja protsessorikasutust, suurendades jõudlust.</li>
+                <li>Sobib hästi suurandmete töötlemise ja mänguarenduse jaoks.</li>
+                <li>Parandab koodi struktureeritust ja andmete lihtsat käsitlemist.</li>
+            </ul>
+
+            <h3>Halvad küljed</h3>
+            <ul>
+                <li>Võib olla keeruline mõista ja rakendada ilma põhjaliku ettevalmistuseta.</li>
+                <li>Rohkem keskendutakse optimeerimisele kui lihtsusele.</li>
+                <li>Võib nõuda suuri muudatusi olemasolevates süsteemides.</li>
+            </ul>
+        </section>
+
+        <!-- Näide case-vahendist -->
+        <section>
+            <h2>Case-vahend: Entity Component System (ECS)</h2>
+            <p>
+                <strong>Entity Component System (ECS)</strong> on arhitektuuriline lähenemine, mida kasutatakse sageli 
+                Data-Oriented Designi rakendamiseks. ECS eraldab andmed ja loogika, mis võimaldab tõhusamat ressursikasutust.
+            </p>
+            <h3>ECS omadused</h3>
+            <ul>
+                <li>Jagab objektid entiteetideks, komponentideks ja süsteemideks.</li>
+                <li>Võimaldab andmete töötlemist partiidena, suurendades jõudlust.</li>
+                <li>Sobib hästi mängumootoritele ja suurte andmestruktuuride haldamiseks.</li>
+            </ul>
+            <h3>Näide ECS-st mänguarenduses:</h3>
+            <pre>
+struct Position {
+    float x, y, z;
+};
+
+struct Velocity {
+    float dx, dy, dz;
+};
+
+void update_position(Position& pos, const Velocity& vel, float dt) {
+    pos.x += vel.dx * dt;
+    pos.y += vel.dy * dt;
+    pos.z += vel.dz * dt;
+}
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Data-oriented_design" target="_blank">Allikas: Wikipedia</a> |
+            <a href="index.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>

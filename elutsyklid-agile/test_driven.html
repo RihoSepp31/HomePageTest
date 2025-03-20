@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-Driven Development (TDD)</title>
+    <link rel="stylesheet" href="..//css failid/test_driven.css">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Test-Driven Development (TDD)</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section>
+            <h2>Mis on Test-Driven Development?</h2>
+            <p>
+                Test-Driven Development (TDD) on tarkvaraarendusprotsess, mille keskmes on <strong>testide kirjutamine enne koodi</strong>.
+                TDD lähenemine tagab, et iga tarkvarakomponent täidab oma määratud ülesannet, samas aidates vältida regressioonivigu.
+            </p>
+            <p>
+                Protsess koosneb kolmest peamisest sammust:
+            </p>
+            <ol>
+                <li><strong>Testi kirjutamine:</strong> Kirjutatakse test, mis määratleb soovitud käitumise, kuid alguses ebaõnnestub, kuna vastav kood pole veel kirjutatud.</li>
+                <li><strong>Koodi kirjutamine:</strong> Kirjutatakse minimaalne kood, mis on vajalik testi läbimiseks.</li>
+                <li><strong>Refaktoreerimine:</strong> Puhastatakse ja optimeeritakse koodi ilma funktsionaalsust muutmata.</li>
+            </ol>
+        </section>
+
+        <!-- Joonis -->
+        <section>
+            <h2>Arendustsükli joonis</h2>
+            <p>
+                Test-Driven Development tsükkel koosneb järgmistest sammudest:
+            </p>
+            <img src="..//Pildid/test_driven.jpg" alt="Test-Driven Development tsükkel" class="responsive-image">
+
+        </section>
+
+        <!-- Head ja vead -->
+        <section>
+            <h2>Eelised ja puudused</h2>
+            <h3>Eelised</h3>
+            <ul>
+                <li>Parandab koodi kvaliteeti ja vähendab vigu.</li>
+                <li>Võimaldab kiiret regressioonitestimist arendusprotsessi käigus.</li>
+                <li>Tagab koodi hooldatavuse ja paindlikkuse.</li>
+                <li>Toetab selget ja modulaarset koodiarhitektuuri.</li>
+            </ul>
+
+            <h3>Puudused</h3>
+            <ul>
+                <li>Nõuab esialgu rohkem aega ja ressursse.</li>
+                <li>Võib olla keeruline rakendada meeskondades, kus puudub TDD kogemus.</li>
+                <li>Testide loomine ja haldamine võib muutuda keerukaks suurtes projektides.</li>
+            </ul>
+        </section>
+
+        <!-- Näide case-vahendist -->
+        <section>
+            <h2>Case-vahend: JUnit</h2>
+            <p>
+                <strong>JUnit</strong> on Java-põhine testiraamistik, mida kasutatakse TDD protsesside toetamiseks. 
+                JUnit võimaldab arendajatel kirjutada ja käivitada üksusteste, et tagada koodi kvaliteet.
+            </p>
+            <h3>JUnit omadused</h3>
+            <ul>
+                <li>Võimaldab kirjutada selgeid ja lihtsaid üksusteste.</li>
+                <li>Integreerub erinevate CI/CD töövoogudega.</li>
+                <li>Toetab testide grupitamist ja käivitamist erinevates keskkondades.</li>
+            </ul>
+            <h3>Näide JUnit testist:</h3>
+            <pre>
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class CalculatorTest {
+    @Test
+    public void testAddition() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add(2, 3);
+        assertEquals(5, result);
+    }
+}
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Allikas: Wikipedia</a> |
+            <a href="index.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+

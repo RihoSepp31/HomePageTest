@@ -1,0 +1,64 @@
+/* Üldine keha stiil */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Päise stiil */
+header {
+    text-align: left;
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+/* Peamine sisu */
+main {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Sektsioonid */
+section {
+    margin-bottom: 30px;
+}
+
+/* Pealkirjade stiil */
+h1, h2 {
+    color: #007acc;
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Loetelude ja nimekirjade stiil */
+ul, ol {
+    margin: 10px 0 20px;
+    padding-left: 20px;
+}
+
+/* Jaluse stiil */
+footer {
+    text-align: left;
+    padding: 15px;
+    background-color: #007acc;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

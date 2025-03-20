@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Model</title>
+    <link rel="stylesheet" href="..//css failid/v_shape.css">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>V-Model Tarkvaraarenduses</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section>
+            <h2>Mis on V-Model?</h2>
+            <p>
+                V-Model, tuntud ka kui Verifikatsiooni ja Valideerimise mudel, on tarkvaraarenduse metoodika, kus arendustegevused ja nende 
+                testimistegevused on joondatud hierarhiliselt. See mudel on SDLC-i (Software Development Life Cycle) laiendus, kus iga 
+                arendusetapp on seotud vastava testimisetapiga. Nimi "V-Model" viitab protsessi visuaalsele esitusviisile, mis meenutab V-tähte.
+            </p>
+        </section>
+
+        <!-- V-Model omadused -->
+        <section>
+            <h2>V-Model omadused</h2>
+            <ul>
+                <li><strong>Struktuur:</strong> Iga arendusetapp vastab kindlale testimisetapile.</li>
+                <li><strong>Järjestikune lähenemine:</strong> Eelmine etapp tuleb lõpetada enne järgmise alustamist.</li>
+                <li><strong>Põhjalik testimine:</strong> Testimine algab juba nõuete kogumise etapis.</li>
+                <li><strong>Visuaalne esitus:</strong> Mudeli V-kujuline struktuur esindab arenduse ja testimise etappide vastavust.</li>
+            </ul>
+        </section>
+
+        <!-- V-Model tsükkel -->
+        <section>
+            <h2>V-Model tsükkel</h2>
+            <p>Allpool on toodud V-Modeli arendusetapid koos nende vastavate testimisetappidega:</p>
+            <ol>
+                <li><strong>Nõuete analüüs:</strong> Kliendi vajaduste mõistmine ja dokumenteerimine.</li>
+                <li><strong>Süsteemi disain:</strong> Kõrgetasemelise süsteemi arhitektuuri loomine.</li>
+                <li><strong>Arhitektuuri disain:</strong> Süsteemi osade ja nendevaheliste suhete määratlemine.</li>
+                <li><strong>Moduleerimine:</strong> Üksikute komponentide kujundamine ja planeerimine.</li>
+                <li><strong>Koodi kirjutamine:</strong> Komponentide programmeerimine vastavalt disainile.</li>
+            </ol>
+            <p>Testimisetapid on vastavuses arendusetappidega:</p>
+            <ul>
+                <li><strong>Üksuse testimine:</strong> Kontrollitakse individuaalseid komponente.</li>
+                <li><strong>Integratsiooni testimine:</strong> Kontrollitakse süsteemi osade koostööd.</li>
+                <li><strong>Süsteemi testimine:</strong> Kogu süsteemi toimivuse kontrollimine.</li>
+                <li><strong>Kasutaja vastuvõtutestimine:</strong> Kliendi vajadustele vastavuse kontrollimine.</li>
+            </ul>
+            <img src="..//Pildid/v_shape.jpg" alt="V-Model tsükkel" class="responsive-image">
+        </section>
+
+        <!-- V-Model eelised ja puudused -->
+        <section>
+            <h2>V-Model eelised ja puudused</h2>
+            <h3>Eelised</h3>
+            <ul>
+                <li>Selge ja organiseeritud protsess.</li>
+                <li>Iga etapp on seotud konkreetse testimisetapiga, mis vähendab vigu.</li>
+                <li>Sobib väikestele ja keskmise suurusega projektidele, kus nõuded on selged.</li>
+                <li>Tagab kvaliteetse tarkvara tänu põhjalikule testimisele igas etapis.</li>
+            </ul>
+
+            <h3>Puudused</h3>
+            <ul>
+                <li>Ei pruugi sobida projektidele, kus nõuded võivad sageli muutuda.</li>
+                <li>Keeruline ja ajamahukas suurte projektide jaoks.</li>
+                <li>Paindumatu lähenemine, kuna eeldatakse, et kõik etapid tuleb lõpetada kindlas järjekorras.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://geeksforgeeks.org/software-engineering-sdlc-v-model/" target="_blank">Allikas: GeeksforGeeks</a> |
+            <a href="elutsukli_faasid.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>

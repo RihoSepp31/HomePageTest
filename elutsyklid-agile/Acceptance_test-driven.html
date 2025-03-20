@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceptance Test-Driven Development</title>
+    <link rel="stylesheet" href="..//css failid/Acceptance_test-driven.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Acceptance Test-Driven Development (ATDD)</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section class="description">
+            <h2>Kirjeldus</h2>
+            <p>
+                Acceptance Test-Driven Development (ATDD) on arendusmetoodika, mis keskendub aktsepteerimistestide loomisele enne
+                arenduse alustamist. Selle meetodi eesmärk on parandada arendajate, testijate ja klientide vahelist koostööd,
+                tagades, et arendatav süsteem vastab kliendi nõuetele ja ootustele.
+            </p>
+        </section>
+
+        <!-- Joonis -->
+        <section class="diagram">
+            <h2>Arendustsükli joonis</h2>
+            <p>
+                Allolev joonis illustreerib Acceptance Test-Driven Development tsüklit:
+            </p>
+            <img src="..//Pildid/Acceptance test driven.jpg" alt="ATDD arendustsükkel" class="responsive-image">
+        </section>
+
+        <!-- Head ja vead -->
+        <section class="pros-cons">
+            <h2>ATDD head ja vead</h2>
+            <div class="columns">
+                <div>
+                    <h3>Head küljed</h3>
+                    <ul>
+                        <li>Parandab kommunikatsiooni arendajate, testijate ja klientide vahel.</li>
+                        <li>Tagab, et lõppkasutaja nõuded on täpselt määratletud ja testitud.</li>
+                        <li>Vähendab võimalust, et nõuded on valesti mõistetud või puudulikult rakendatud.</li>
+                        <li>Toetab automatiseeritud testimist ja kiiret tagasisidet arenduses.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Halvad küljed</h3>
+                    <ul>
+                        <li>Nõuab rohkem aega ja ressursse aktsepteerimistestide loomiseks ja haldamiseks.</li>
+                        <li>Võib olla keeruline rakendada, kui meeskonnal puudub kogemus ATDD-ga.</li>
+                        <li>Sõltub tugevalt kliendi ja arendajate koostöö tõhususest.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Näide case-vahendist -->
+        <section class="case-tool">
+            <h2>Case-vahend: Cucumber</h2>
+            <p>
+                <strong>Cucumber</strong> on populaarne tööriist, mis toetab Acceptance Test-Driven Developmenti.
+                Cucumber võimaldab kirjutada teststsenaariume inimloetaval kujul, kasutades Gherkin-keelt, mis on lihtne ja struktureeritud.
+            </p>
+            <h3>Cucumberi omadused</h3>
+            <ul>
+                <li>Toetab koostööd klientide, testijate ja arendajate vahel.</li>
+                <li>Võimaldab kirjutada automatiseeritud aktsepteerimisteste, mis on arusaadavad kõigile meeskonnaliikmetele.</li>
+                <li>Ühilduv erinevate programmeerimiskeeltega, nagu Java, JavaScript ja Python.</li>
+            </ul>
+            <h3>Vastuvõtmise kriteeriumid ja testid:</h3>
+            <p>Vastuvõtukriteeriumid on kirjeldus, mida testiga kontrollitakse. Võttes arvesse nõuet, nagu
+            "Kasutajana soovin raamatut raamatukogust välja vaadata", võib aktsepteerimiskriteeriumiks olla
+            "kontrollida, kas raamat on märgitud väljamakstuks". Selle nõude vastuvõtutest annab üksikasjad, et testi saaks
+            iga kord sama efektiga läbi viia.</p>
+            <pre>
+Feature: Tellimuse staatus
+Given Book that has not been checked out
+And User who is registered on the system
+When User checks out a book
+Then Book is marked as checked out
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Acceptance_test-driven_development" target="_blank">Allikas: Wikipedia</a> |
+            <a href="index.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Test-Driven Development (CTDD)</title>
+    <link rel="stylesheet" href="..//css failid/Continuos_test_driven.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Continuous Test-Driven Development (CTDD)</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section>
+            <h2>Kirjeldus</h2>
+            <p>
+                Continuous Test-Driven Development (CTDD) on testipõhise arenduse laiendus, mis ühendab 
+                <span class="highlight">katkematu integratsiooni ja testimise</span>. 
+                Selle eesmärk on automatiseerida ja integreerida testid pidevalt arendusprotsessi käigus, et tagada koodi kvaliteet ja vältida regressioone.
+            </p>
+        </section>
+
+        <!-- Joonis -->
+        <section>
+            <h2>Arendustsükli joonis</h2>
+            <p>
+                Allolev joonis illustreerib Continuous Test-Driven Developmenti tsüklit:
+            </p>
+            <img src="images/ctdd_cycle.png" alt="CTDD arendustsükkel" class="responsive-image">
+        </section>
+
+        <!-- Head ja vead -->
+        <section>
+            <h2>CTDD head ja vead</h2>
+            <h3>Head küljed</h3>
+            <ul>
+                <li>Tagab koodi kvaliteedi pideva jälgimise ja testimise.</li>
+                <li>Vähendab regressioonivigade esinemise tõenäosust.</li>
+                <li>Toetab kiiret ja sujuvat CI/CD töövoogu.</li>
+                <li>Võimaldab arendajatel keskenduda rohkem funktsionaalsusele kui vigade leidmisele.</li>
+            </ul>
+
+            <h3>Halvad küljed</h3>
+            <ul>
+                <li>Nõuab suuremat investeeringut testimise automatiseerimise tööriistadesse.</li>
+                <li>Võib olla keeruline rakendada ilma piisava infrastruktuurita.</li>
+                <li>Testide pidev jooksutamine võib olla ressursimahukas.</li>
+            </ul>
+        </section>
+
+        <!-- Näide case-vahendist -->
+        <section>
+            <h2>Case-vahend: Jenkins</h2>
+            <p>
+                <strong>Jenkins</strong> on populaarne tööriist, mis toetab Continuous Test-Driven Developmenti. 
+                Jenkins võimaldab CI/CD töövoogude automatiseerimist ja testide pidevat integreerimist arendusprotsessi.
+            </p>
+            <h3>Jenkins'i omadused</h3>
+            <ul>
+                <li>Automatiseerib pidevat testimist ja integreerimist.</li>
+                <li>Toetab erinevaid pluginaid ja tööriistu, nagu Selenium ja JUnit.</li>
+                <li>Integreerub populaarsete koodihaldusteenustega, nagu GitHub ja GitLab.</li>
+            </ul>
+            <h3>Näide Jenkinsfile konfiguratsioonist:</h3>
+            <pre>
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Building the application...'
+      }
+    }
+    stage('Test') {
+      steps {
+        echo 'Running automated tests...'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Deploying to production...'
+      }
+    }
+  }
+}
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Continuous_test-driven_development" target="_blank">Allikas: Wikipedia</a> |
+            <a href="index.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>

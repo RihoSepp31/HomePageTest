@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikaadid</title>
+    <link rel="stylesheet" href="cerfitikate.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Avaleht</a></li>
+        </ul>
+    </nav>
+
+    <section id="certificates">
+        <h1>Minu Sertifikaadid</h1>
+        <div class="certificate">
+            <div class="certificate-info">
+                <h2>Responsive Web Design</h2>
+                <p>FreeCodeCamp sertifikaat, omandatud 10. detsembril 2024, hõlmates 300 tundi veebidisaini õpinguid.</p>
+                <p><strong>FreeCodeCamp:</strong> FreeCodeCamp on ülemaailmselt tunnustatud veebiplatvorm, mis pakub tasuta programmeerimis- ja IT-kursusi, keskendudes praktilistele projektidele ja sertifikaatidele.</p>
+            </div>
+            <div class="certificate-image">
+                <img src="../Pildid/Cerfitikaat Web designer.jpg" alt="Responsive Web Design Certificate" onclick="enlargeImage(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal suurendatud pildi jaoks -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Funktsioon pildi suurendamiseks
+        function enlargeImage(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+        }
+
+        // Funktsioon modali sulgemiseks
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

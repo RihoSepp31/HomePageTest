@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure by Design</title>
+    <link rel="stylesheet" href="..//css failid/data_driven_development.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Secure by Design</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section>
+            <h2>Kirjeldus</h2>
+            <p>
+                Secure by Design on tarkvaraarendusfilosoofia, mis keskendub <span class="highlight">turvalisuse</span> sisseehitamisele juba arenduse algfaasides. 
+                Selle eesmärk on tagada, et rakendused on turvalised vaikimisi, ilma et kasutajad peaksid lisakaitsemeetmeid rakendama.
+            </p>
+            <p>
+                Lähenemise aluseks on järgmised põhimõtted:
+            </p>
+            <ul>
+                <li><strong>Minimeeritud rünnakupind:</strong> Süsteemid peaksid olema kavandatud nii, et neil oleks võimalikult vähe komponente, mis võivad rünnakute sihtmärgiks saada.</li>
+                <li><strong>Vaikimisi turvaline:</strong> Kõik süsteemi osad peaksid olema vaikimisi turvalised, näiteks peaksid ligipääsukontrollid olema keelatud, kuni kasutaja annab loa.</li>
+                <li><strong>Kaitse rikkumise korral:</strong> Kui süsteem on ohustatud, peaksid olla meetmed, mis minimeerivad kahjusid (nt õiguste piiramise kaudu).</li>
+            </ul>
+        </section>
+
+        <!-- Joonis -->
+        <section>
+            <h2>Arendustsükli joonis</h2>
+            <p>
+                Allolev joonis illustreerib Secure by Design arendustsüklit:
+            </p>
+            <img src="..//Pildid/secure.png" alt="Secure by Design tsükkel" class="responsive-image">
+        </section>
+
+        <!-- Head ja vead -->
+        <section>
+            <h2>Head ja vead</h2>
+            <h3>Head küljed</h3>
+            <ul>
+                <li>Vähendab vigade ja turvaaukude arvu tootmises.</li>
+                <li>Tagab kasutajate andmete parema kaitse.</li>
+                <li>Vähendab turvaintsidentide kulusid ja mainekahju riski.</li>
+                <li>Soodustab standardiseeritud ja korduvkasutatavate turvalahenduste loomist.</li>
+            </ul>
+
+            <h3>Halvad küljed</h3>
+            <ul>
+                <li>Nõuab suuremat alginvesteeringut aja ja ressursside osas.</li>
+                <li>Keeruline rakendada ilma spetsiaalsete teadmiste ja koolitusteta.</li>
+                <li>Võib suurendada arendusaja pikkust, eriti algfaasis.</li>
+            </ul>
+        </section>
+
+        <!-- Näide case-vahendist -->
+        <section>
+            <h2>Case-vahend: OWASP ZAP</h2>
+            <p>
+                <strong>OWASP ZAP (Zed Attack Proxy)</strong> on avatud lähtekoodiga tööriist, mis aitab turvaauke avastada ja parandada. 
+                Seda kasutatakse laialdaselt Secure by Design põhimõtete rakendamiseks rakenduste arendamise ja testimise käigus.
+            </p>
+            <h3>OWASP ZAP omadused</h3>
+            <ul>
+                <li>Avastab veebirakenduste turvaaugud, näiteks XSS ja SQL Injection.</li>
+                <li>Pakkub lihtsat kasutajaliidest nii algajatele kui ka kogenud kasutajatele.</li>
+                <li>Integreerub hästi CI/CD töövoogudega ja toetab automatiseeritud turvatestimist.</li>
+            </ul>
+            <h3>Näide OWASP ZAP kasutamisest:</h3>
+            <pre>
+1. Installige OWASP ZAP.
+2. Konfigureerige proksiserver testitava rakenduse jaoks.
+3. Käivitage turvatest ja analüüsige leitud turvaauke.
+4. Rakendage vajalikud parendused ja korrake testi.
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Secure_by_design" target="_blank">Allikas: Wikipedia</a> |
+            <a href="index.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>

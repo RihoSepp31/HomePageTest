@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-Driven Programming</title>
+    <link rel="stylesheet" href="..//css failid/data_driven_development.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Data-Driven Programming</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section>
+            <h2>Kirjeldus</h2>
+            <p>
+                Data-driven programming on programmeerimisparadigma, mis keskendub <span class="highlight">andmete</span> ja nende 
+                voogude kasutamisele rakenduse loogika juhtimiseks. Selle lähenemise puhul määravad andmed, kuidas rakenduse loogika töötab,
+                võimaldades paindlikkust ja taasväärtustatavat koodi.
+            </p>
+        </section>
+
+        <!-- Joonis -->
+        <section>
+            <h2>Arendustsükli joonis</h2>
+            <p>
+                Allolev joonis illustreerib Data-Driven Programming tsüklit:
+            </p>
+            <img src="..//Pildid/data_driven_development.png" alt="Data-Driven Programming tsükkel" class="responsive-image">
+        </section>
+
+        <!-- Head ja vead -->
+        <section>
+            <h2>Head ja vead</h2>
+            <h3>Head küljed</h3>
+            <ul>
+                <li>Vähendab koodi kordamist, võimaldades andmepõhist otsuste tegemist.</li>
+                <li>Tagab paindlikuma ja paremini laiendatava arhitektuuri.</li>
+                <li>Sobib hästi rakendustele, kus andmed muutuvad sageli ja vajavad kohest rakendamist.</li>
+                <li>Toetab masinõppe ja analüütikapõhiste lahenduste loomist.</li>
+            </ul>
+
+            <h3>Halvad küljed</h3>
+            <ul>
+                <li>Võib suurendada koodi keerukust, kui andmete voog pole selgelt määratletud.</li>
+                <li>Andmepõhised vead võivad olla raskesti tuvastatavad ja silutavad.</li>
+                <li>Nõuab rohkem testimist, et tagada andmete ja loogika õigsus.</li>
+            </ul>
+        </section>
+
+        <!-- Näide case-vahendist -->
+        <section>
+            <h2>Case-vahend: Apache Kafka</h2>
+            <p>
+                <strong>Apache Kafka</strong> on populaarne tööriist, mis toetab Data-Driven Programmingut. 
+                Kafka võimaldab andmete voogude reaalajas töötlemist, kasutades andmepõhist arhitektuuri.
+            </p>
+            <h3>Apache Kafka omadused</h3>
+            <ul>
+                <li>Võimaldab andmete voogude töötlemist ja haldamist.</li>
+                <li>Sobib hästi hajus- ja reaalaja-süsteemidele.</li>
+                <li>Pakub suurepärast skaleeritavust ja usaldusväärsust.</li>
+            </ul>
+            <h3>Näide Apache Kafka konfiguratsioonist:</h3>
+            <pre>
+# Kafka server konfiguratsioon
+log.dirs=/tmp/kafka-logs
+num.partitions=3
+zookeeper.connect=localhost:2181
+broker.id=1
+log.retention.hours=168
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Data-driven_programming" target="_blank">Allikas: Wikipedia</a> |
+            <a href="index.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>

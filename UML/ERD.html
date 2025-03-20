@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD Diagrammid</title>
+    <link rel="stylesheet" href="erd_style.css">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Entity-Relationship Diagrammid (ERD)</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Mis on ERD?</h2>
+        <p>
+            Entity-Relationship Diagram (ERD) on diagramm, mis kujutab andmebaasi struktuuri graafiliselt. Selle abil saab visualiseerida tabeleid, nende omavahelisi suhteid ja elemente nagu 
+            primaarvõtmed ning välisvõtmed.
+        </p>
+        <p>
+            ERD aitab andmebaaside planeerimisel, kujundamisel ja mõistmisel, võimaldades arendajatel, analüütikutel ja disaineritel töötada sama mudeli järgi.
+        </p>
+    </section>
+
+    <section id="usage">
+        <h2>Kus ERD-sid kasutatakse?</h2>
+        <p>
+            ERD-sid kasutatakse peamiselt andmebaaside projekteerimiseks. Need on kasulikud:
+        </p>
+        <ul>
+            <li>Andmebaasi struktuuri kavandamisel</li>
+            <li>Suhete kaardistamiseks tabelite vahel</li>
+            <li>Andmevoogude ja nõuete analüüsiks</li>
+            <li>Dokumentatsiooni koostamiseks</li>
+        </ul>
+    </section>
+
+    <section id="components">
+        <h2>ERD Diagrammi Põhielemendid</h2>
+        <ul>
+            <li><strong>Entiteet:</strong> Objekt või asi, mis sisaldab andmeid. Tavaliselt tähistatud ristkülikuga.</li>
+            <li><strong>Suhe:</strong> Seos kahe entiteedi vahel, näiteks üks-üks, üks-mitmele.</li>
+            <li><strong>Atribuudid:</strong> Entiteedi omadused või väljad, tähistatud ovaaliga.</li>
+            <li><strong>Võtmed:</strong> Primaar- ja välisvõtmed, mis aitavad tuvastada andmeid.</li>
+        </ul>
+        <h3>Graafiline näide:</h3>
+        <ul>
+            <li><img src="uml_pildid/relatonship.jpg" alt="Suhete näide"></li>
+        </ul>
+    </section>
+
+    <section id="keys">
+        <h2>Võtmete Tüpid</h2>
+        <ul>
+            <li><strong>Primary Key:</strong> Unikaalne väli, mis identifitseerib tabeli iga kirje.</li>
+            <li><strong>Foreign Key:</strong> Välisvõti, mis viitab teise tabeli primaarvõtmele ja loob seose.</li>
+            <li><strong>Composite Key:</strong> Võti, mis koosneb mitmest väljast, et identifitseerida kirje unikaalselt.</li>
+            <li><strong>Key:</strong> Ülesanne andmete tuvastamiseks tabelis.</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Viited</h2>
+        <ul>
+            <li><a><a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model" target="_blank">Wikipedia: Entity-Relationship Model</a>
+            <li><a href="..//index.html">Tagasi avalehele</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Riho Sepp - Minu Tarkvaraarendus Portfolio</p>
+    </footer>
+</body>
+</html>

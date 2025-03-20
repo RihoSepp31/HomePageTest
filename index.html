@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minu Õpimapp Tarkvara arendusprotsessis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigeerimismenüü -->
+    <nav>
+        <ul></ul>
+        <div id="google_translate_element" class="translate-box"></div>
+    </nav>
+
+    <!-- Hero ala gradienttaustaga ja tekstiga -->
+    <div class="hero">
+        <h1>Tere tulemast minu Kodulehele</h1>
+        <p>Avasta minu teadmised ja projektid IT-maailmas.</p>
+        <div class="hero-links">
+            <a href="https://github.com/RihoSepp31" class="button-link" target="_blank">GitHub</a>
+            <a href="./cerfitikaat/cerfiticate.html" class="button-link" target="_blank">Serfitikaadid</a>
+            <a href="./Minust/minust.html" class="button-link" target="_blank">Minust</a>
+        </div>
+    </div>
+
+    <!-- "Kes ma olen" sektsioon -->
+    <section id="kes-ma-olen">
+        <div class="profile-container">
+            <img src="./Pildid/Masterchef.jpg" alt="Riho MasterChef põll" class="profile-img left">
+            <div class="text-content">
+                <h1>Kes ma olen</h1>
+                <p>
+                    Minu nimi on Riho Sepp. Olen IT-spetsialist ja kokk. Omandasin IT-süsteemide spetsialisti eriala Tallinna Polütehnikumis ning olen töötanud kasutajatoe ja IT-lahenduste pakkumise valdkonnas. Lisaks olen tegutsenud kokana ja omandanud laialdasi kogemusi toiduvalmistamises. Vabal ajal õpin iseseisvalt programmeerimist ning arendan oma tarkvaraarenduse oskusi. Mängin vahel ka erinevaid arvutimänge.
+                </p>
+            </div>
+            <img src="./Pildid/randomusb.jpg" alt="Humoorikas IT pilt" class="profile-img right">
+        </div>
+    </section>
+
+    <!-- Lehekülgede osa -->
+    <section id="leheküljed">
+        <h2>Siin on minu leheküljed:</h2>
+        <p>Siin leiad minu loodud materjalid ja kasulikud õppematerjalid tarkvaraarenduse teemadel.</p>
+        <button id="toggle-pages" class="button-link">Näita lehekülgi</button>
+        <div id="pages" style="display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+            <a href="./Arenduse_elutsuklid/elutsukli_faasid.html" class="button-link">Süsteemiarenduse elutsüklisse</a>
+            <a href="./case_vahendid/main.html" class="button-link">Case Vahendid</a>
+            <a href="./BitCoinCalculator/bitcoincalculator.html" class="button-link">Bitcoin</a>
+            <a href="./UML/uml.html" class="button-link">Mis on UML</a>
+            <a href="./Database_tarkvara/database.html" class="button-link">Database</a>
+            <a href="./serveritarkvara_paigaldamine/serveritarkvara.html" class="button-link">Serveritarkvara</a>
+        </div>
+    </section>
+
+    <!-- Õpiteekonna sektsioon -->
+    <section id="opiteekond">
+        <h2>Projektid:</h2>
+        <p>Siit leiad minu IT-õpingute käigus loodud projektid ja arendused.</p>
+        <p>Hetkel on tulemas Python õpe.</p>
+        <button id="toggle-learning" class="button-link">Näita Projekte</button>
+        <div id="learning-pages" style="display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+            <a href="./Pythoni_Ope/1.Sissejuhatus.html" class="button-link">Python Õpe</a>
+            <a href="./learning/javascript.html" class="button-link">JavaScript</a>
+            <a href="./learning/react.html" class="button-link">React</a>
+            <a href="./learning/sql.html" class="button-link">SQL ja Andmebaasid</a>
+            <a href="./learning/devops.html" class="button-link">DevOps</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@stepsepp" target="_blank">
+                <img src="./Pildid/youtube.jpg" alt="YouTube logo">
+            </a>
+            <a href="https://www.twitch.tv/stepsepp" target="_blank">
+                <img src="./Pildid/twitch.jpg" alt="Twitch logo">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61573876632833" target="_blank">
+                <img src="./Pildid/facebook.jpg" alt="Facebook logo">
+            </a>
+        </div>
+        <p>© 2025 Riho Sepp | Kõik õigused kaitstud</p>
+    </footer>
+
+    <!-- Google Translate skript -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- JavaScripti fail (LAADIME PÄRAST BODY!) -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

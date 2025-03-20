@@ -1,0 +1,102 @@
+/* Üldised stiilid */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f7f7, #c9c9ff);
+    color: #2c3e50;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/dark_mosaic.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Päis */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Peamine sisu */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sektsioonid */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Kirjeldus */
+.description p {
+    text-align: justify;
+}
+
+/* Pealkirjad */
+h1, h2 {
+    color: #34495e;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Columns */
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.columns > div {
+    flex: 1;
+}
+
+/* Koodiplokid */
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-left: 5px solid #007BFF;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+
+/* Jalus */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    margin-top: 30px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer p a:hover {
+    color: #e9ecef;
+}

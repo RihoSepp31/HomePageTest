@@ -1,0 +1,88 @@
+/* Üldine keha stiil */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Päise stiil */
+header {
+    text-align: center;
+    background-color: #0072ff;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Peamise sisu stiil */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sektsioonid */
+section {
+    margin-bottom: 30px;
+}
+
+/* Pealkirjade stiil */
+h1, h2 {
+    color: #0056b3;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Loetelu stiil */
+ul, ol {
+    margin: 10px 0 20px;
+    padding-left: 20px;
+}
+
+/* Pildid */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Koodiplokk */
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-left: 5px solid #0072ff;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+    border-radius: 4px;
+}
+
+/* Jalus */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0056b3;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specification by Example (SBE)</title>
+    <link rel="stylesheet" href="..//css failid/data_driven_development.css">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Specification by Example (SBE)</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section>
+            <h2>Mis on Specification by Example?</h2>
+            <p>
+                Specification by Example (SBE) on tarkvaraarendusmetoodika, mis kasutab <strong>testitavaid näiteid</strong> nõuete 
+                selgitamiseks, valideerimiseks ja dokumenteerimiseks. Selle peamine eesmärk on saavutada ühtne arusaam süsteemi toimimisest 
+                arendajate, testijate ja äriekspertide vahel.
+            </p>
+            <p>
+                SBE ühendab nõuete kogumise ja testimise, muutes need osaks ühest integreeritud protsessist. Näited, mida kasutatakse 
+                nõuete kirjeldamiseks, on samal ajal aluseks ka automatiseeritud testidele, mis kinnitavad, et süsteem töötab vastavalt 
+                ootustele.
+            </p>
+            <p>
+                SBE tugineb järgmistele peamistele põhimõtetele:
+            </p>
+            <ul>
+                <li><strong>Kaasav koostöö:</strong> Arendajad, testijad ja ärieksperdid töötavad tihedalt koos, et määratleda ja valideerida nõudeid.</li>
+                <li><strong>Testitavad näited:</strong> Nõuded väljendatakse konkreetsete näidetena, mis on mõistetavad kõigile osapooltele.</li>
+                <li><strong>Automatiseeritud testid:</strong> Näited teisendatakse automatiseeritud testideks, mis valideerivad süsteemi pidevalt.</li>
+            </ul>
+        </section>
+
+        <!-- Joonis -->
+        <section>
+            <h2>Arendustsükli joonis</h2>
+            <p>
+                Specification by Example tsüklit iseloomustab järgmine protsess:
+            </p>
+            <ol>
+                <li>Nõuete ja äriloogika kogumine äriekspertidelt.</li>
+                <li>Testitavate näidete koostamine ja valideerimine koostöös arendajatega.</li>
+                <li>Testide automatiseerimine, et tagada nende pidev käivitamine.</li>
+                <li>Süsteemi iteratiivne täiustamine ja valideerimine näidete abil.</li>
+            </ol>
+            <img src="..//Pildid/specificasion.jpg" alt="Specification by Example tsükkel">
+        </section>
+
+        <!-- Head ja vead -->
+        <section>
+            <h2>Specification by Example eelised ja puudused</h2>
+            <h3>Eelised</h3>
+            <ul>
+                <li>Parandab erinevate osapoolte vahelist koostööd ja kommunikatsiooni.</li>
+                <li>Tagab nõuete selguse ja arusaadavuse kõigile meeskonnaliikmetele.</li>
+                <li>Vähendab vigu ja mitmeti mõistetavust nõuetes.</li>
+                <li>Toetab automatiseeritud testimist ja pidevat valideerimist arendusprotsessi käigus.</li>
+            </ul>
+
+            <h3>Puudused</h3>
+            <ul>
+                <li>Nõuab rohkem aega ja ressursse näidete loomisel ja valideerimisel.</li>
+                <li>Automatiseeritud testide haldamine võib olla keeruline ja ajamahukas.</li>
+                <li>Eeldab, et kõik osapooled on pühendunud ja osalevad aktiivselt protsessis.</li>
+                <li>Ei pruugi sobida väiksemate ja lihtsamate projektide jaoks.</li>
+            </ul>
+        </section>
+
+        <!-- Näide case-vahendist -->
+        <section>
+            <h2>Case-vahend: Cucumber</h2>
+            <p>
+                <strong>Cucumber</strong> on üks populaarsemaid vahendeid Specification by Example rakendamiseks. See võimaldab 
+                ärireeglite väljendamist testitavate näidete kujul, kasutades lihtsat ja inimloetavat <strong>Gherkin-keelt</strong>.
+            </p>
+            <h3>Cucumberi omadused</h3>
+            <ul>
+                <li>Võimaldab kirjutada teststsenaariume, mida saavad mõista kõik meeskonnaliikmed, sealhulgas ärieksperdid.</li>
+                <li>Integreerub erinevate programmeerimiskeelte ja testiraamistikega.</li>
+                <li>Toetab koostööd arendajate, testijate ja ärikliendi vahel.</li>
+            </ul>
+            <h3>Näide Gherkin-keeles:</h3>
+            <pre>
+Feature: Konto saldo kontroll
+  Scenario: Konto omanik vaatab saldo
+    Given konto omanik on sisse loginud
+    When konto omanik avab saldo vaate
+    Then kuvatakse konto saldo 100 eurot
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Specification_by_example" target="_blank">Allikas: Wikipedia</a> |
+            <a href="index.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>

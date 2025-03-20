@@ -1,0 +1,128 @@
+/* Flowchart Kujunduse Stiilileht */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #dbefff);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #003366, #3399ff);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav .home-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav .home-button:hover {
+    background-color: #ff3300;
+    transform: translateY(-3px);
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in;
+}
+
+section h2 {
+    color: #0066cc;
+    border-bottom: 3px solid #3399ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+section h3 {
+    color: #ff6600;
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    color: #555;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.1em;
+    color: #444;
+}
+
+img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #3399ff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #ff6600;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #003366;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

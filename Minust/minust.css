@@ -1,0 +1,75 @@
+/* Üldine stiil */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff8a00, #da1b60);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Pealkirja stiil */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Sektsioonide stiil */
+section {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Koolide stiil */
+.school {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.school:hover {
+    transform: translateY(-5px);
+}
+
+/* Pildid */
+.school img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.school img:hover {
+    transform: scale(1.1);
+}
+
+/* Lingid */
+a {
+    display: inline-block;
+    background: #ff8a00;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+a:hover {
+    background: #da1b60;
+}

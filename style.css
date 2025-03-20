@@ -1,0 +1,572 @@
+/* Üldine stiil */
+body {
+    background: linear-gradient(135deg, #f0f4ff, #d9eaff);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navigeerimismenüü */
+nav {
+    background-color: #2e629b;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Profiilipilt */
+.profile-image {
+    float: right;
+    margin: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero ala */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2e629b, #4c84c7);
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-links .button-link {
+    margin: 5px;
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #2e629b;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-links .button-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sektsioonid */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    color: #2e629b;
+    margin-bottom: 10px;
+}
+
+/* Kontaktide ja lehekülgede stiil */
+#kontaktid, #pages {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#kontaktid.show, #pages.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Nupud */
+.button-link {
+    display: inline-block;
+    background-color: #4c84c7;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #2e629b;
+    transform: translateY(-3px);
+}
+
+/* Mobiilivaade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .profile-image {
+        width: 150px;
+        margin: 10px auto;
+        float: none;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero {
+        padding: 40px 10px;
+        margin: 10px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .button-link {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Sertifikaatide stiil */
+#certificates {
+    margin: 20px;
+    padding: 20px;
+}
+
+.certificate {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.certificate img {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certificate h2 {
+    color: #2e629b;
+    margin: 0;
+}
+
+.certificate p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+#greeting-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+
+/* FOOTERI STIIL */
+footer {
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* Sotsiaalmeedia ikoonide konteiner */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* Ikoonide stiil ja efektid */
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+#google_translate_element {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.goog-te-gadget {
+    font-size: 16px !important;
+    color: white !important;
+}
+
+.goog-te-gadget select {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* "Kes ma olen" sektsioon */
+#kes-ma-olen {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Joonduvad servad sujuvaks lugemiseks */
+}
+
+/* Pealkiri */
+#kes-ma-olen h1 {
+    color: #2e629b;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Lõik (p) */
+#kes-ma-olen p {
+    font-size: 1.2em;
+    line-height: 1.7; /* Suurem rea kõrgus sujuvamaks lugemiseks */
+    color: #444;
+    text-align: justify; /* Joonduvad servad */
+}
+
+/* Kes ma olen - paigutus */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Pildid täiesti äärde */
+    max-width: 90%; /* Suurem ala kasutamiseks */
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Teksti stiil */
+.text-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    max-width: 50%; /* Tekst saab rohkem ruumi */
+}
+
+/* Pealkiri */
+.text-content h1 {
+    color: #2e629b;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Tekst */
+.text-content p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* Pildid */
+.profile-img {
+    width: 300px; /* Suuremad pildid */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Vasakul ja paremal olevad pildid */
+.profile-img.left {
+    align-self: center;
+    margin-right: auto; /* Viib vasakule äärde */
+}
+
+.profile-img.right {
+    align-self: center;
+    margin-left: auto; /* Viib paremale äärde */
+}
+
+/* Mobiilivaates kuvab pildid üksteise alla */
+@media (max-width: 1024px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .text-content {
+        max-width: 90%;
+    }
+}
+
+/* ... (muu CSS) ... */
+
+/* Kes ma olen - paigutus */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Muudetud, et pildid oleksid äärtes */
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Teksti stiil */
+.text-content {
+    flex: 1;
+    text-align: justify; /* Muudetud, et tekst oleks loetavam */
+    padding: 20px;
+    max-width: 60%; /* Suurendatud, et tekst võtaks rohkem ruumi */
+    margin: 0 auto; /* Lisatud, et tekst oleks keskel */
+}
+
+/* Pealkiri */
+.text-content h1 {
+    color: #2e629b;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Lisatud, et pealkiri oleks keskel */
+}
+
+/* Tekst */
+.text-content p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* Pildid */
+.profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Vasakul ja paremal olevad pildid */
+.profile-img.left {
+    margin-right: 20px; /* Lisatud marginaal */
+}
+
+.profile-img.right {
+    margin-left: 20px; /* Lisatud marginaal */
+}
+
+/* Mobiilivaates kuvab pildid üksteise alla */
+@media (max-width: 1024px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 80%;
+        margin: 20px auto; /* Muudetud marginaal */
+    }
+
+    .text-content {
+        max-width: 90%;
+    }
+}
+
+/* Kes ma olen - sektsiooni paigutus */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Tekst jääb keskele */
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Pildid paigutatakse absoluutsete koordinaatidega */
+}
+
+/* Tekst keskjoondatult ja lai */
+.text-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px; /* Tekst saab rohkem ruumi */
+}
+
+/* Pealkiri */
+.text-content h1 {
+    color: #2e629b;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Tekst */
+.text-content p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* Pildid */
+.profile-img {
+    width: 300px; /* Suurused sobivad lehega */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Vasakul olev pilt */
+.profile-img.left {
+    left: -350px; /* Viib pildi täiesti lehe vasakule äärele */
+}
+
+/* Paremal olev pilt */
+.profile-img.right {
+    right: -350px; /* Viib pildi täiesti lehe paremale äärele */
+}
+
+/* Mobiilivaates kuvab pildid üksteise alla */
+@media (max-width: 1024px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        position: static;
+    }
+
+    .profile-img {
+        width: 80%;
+        position: static;
+        transform: none;
+        margin: 10px 0;
+    }
+
+    .text-content {
+        max-width: 90%;
+    }
+}
+
+/* Meme-pilt linkide kohal */
+.meme-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px; /* Toob lähemale linkide sektsioonile */
+    margin-bottom: 40px; /* Enne footeri algust */
+}
+
+/* Pildi stiil */
+.meme-img {
+    width: 350px; /* Paraja suurusega, et ei domineeriks */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Kui viid hiire peale, annab väikese liikumise */
+.meme-img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobiilis väiksem */
+@media (max-width: 768px) {
+    .meme-img {
+        width: 80%;
+    }
+}
+
+/* Live külastajate loendur */
+.live-counter {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+

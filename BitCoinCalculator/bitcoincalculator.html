@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitcoinCalculator</title>
+    <link rel="stylesheet" href="..//css failid/bitcoincalculator_style.css">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>BitcoinCalculator</h1>
+        <p>Lihtne ja funktsionaalne Bitcoini kalkulaator</p>
+    </header>
+    
+    <nav>
+        <a href="#ulevaade">Ülevaade</a>
+        <a href="#nouded">Nõuded</a>
+        <a href="#paigaldamine">Paigaldamine</a>
+        <a href="#kasutamine">Kasutamine</a>
+        <a href="#kasutatud">Kasutatud Tehnoloogiad</a>
+        <a href="#diagramm">Protsessidiagramm</a>
+        <a href="#autor">Autor</a>
+    </nav>
+
+    <main>
+        <section id="ulevaade">
+            <h2>Ülevaade</h2>
+            <p>BitcoinCalculator on lihtne tarkvara, mille eesmärk on pakkuda vahendit Bitcoini väärtuse arvutamiseks ja väärtuste analüüsiks. Projekt on loodud praktilise kasutuse ja õppimise eesmärgil.</p>
+        </section>
+
+        <section id="nouded">
+            <h2>Nõuded</h2>
+            <ul>
+                <li>Node.js (versioon 14 või uuem)</li>
+                <li>Git (versioonikontrolli jaoks)</li>
+                <li>PostgreSQL (andmebaasi seadistamiseks, kui kasutusel)</li>
+                <li>Internetüyhendus (andmete sõltuvuste tõmbamiseks)</li>
+            </ul>
+        </section>
+
+        <section id="paigaldamine">
+            <h2>Paigaldamine</h2>
+            <p>Paigalda projekt lokaalselt järgides neid samme:</p>
+            <ol>
+                <li>Klooni repository oma arvutisse:</li>
+                <code>git clone https://github.com/RihoSepp31/BitcoinCalculator.git</code>
+                <li>Liigu projekti kausta:</li>
+                <code>cd BitcoinCalculator</code>
+                <li>Paigalda vajalikud sõltuvused:</li>
+                <code>npm install</code>
+                <li>Käivita rakendus lokaalselt:</li>
+                <code>node app.js</code>
+            </ol>
+        </section>
+
+        <section id="kasutamine">
+            <h2>Kasutamine</h2>
+            <p>Kui tarkvara on edukalt paigaldatud ja käivitatud, saad rakendust kasutada oma brauseris või lokaalses terminalis. Peamised funktsioonid hõlmavad:</p>
+            <ul>
+                <li>Bitcoini vahetuskursi arvutamine.</li>
+                <li>Lihtsad matemaatilised tehingud (näiteks korrutamine, jagamine).</li>
+                <li>Informatsiooni analüüs ja kuvamine.</li>
+            </ul>
+        </section>
+
+        <section id="kasutatud">
+            <h2>Kasutatud Tehnoloogiad ja Käsud</h2>
+            <p>Selles projektis on kasutatud järgmisi tehnoloogiaid ja käske:</p>
+            <ul>
+                <li><strong>Node.js:</strong> JavaScripti põhine serverirakenduse keskkond.</li>
+                <li><strong>Git:</strong> Versioonikontrolli vahend, mis aitab projektifaile hallata.</li>
+                <li><strong>NPM:</strong> Node Package Manager, millega hallatakse projektis vajalikke sõltuvusi.</li>
+                <li><strong>git clone:</strong> Repository kloonimiseks kohalikku masinasse.</li>
+                <li><strong>npm install:</strong> Vajalikud sõltuvused paigaldatakse automaatselt package.json faili alusel.</li>
+                <li><strong>node app.js:</strong> Rakenduse käivitamiseks lokaalselt.</li>
+            </ul>
+            <p>Lisaks on kasutusel HTML, CSS ja JavaScript kasutajaliidese ja funktsionaalsuse loomisel.</p>
+        </section>
+
+        <section id="diagramm">
+            <h2>Protsessidiagramm</h2>
+            <p>Allolev diagramm kirjeldab rakenduse põhilist töövoogu:</p>
+            <img src="Bitcoin.png" alt="Bitcoin kalkulaatori protsessidiagramm" style="max-width: 100%; height: auto;">
+        </section>
+
+        <section id="autor">
+            <h2>Autor</h2>
+            <p>See projekt on loodud <strong>Riho Sepp</strong> poolt. Lisainfo ja uusim versioon on saadaval GitHubis:</p>
+            <p><a href="https://github.com/RihoSepp31/BitcoinCalculator" target="_blank">Vaata projekti GitHubis</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Riho Sepp. Kõik õigused kaitstud.</p>
+    </footer>
+</body>
+</html>

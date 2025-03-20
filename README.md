@@ -1,2 +1,1 @@
-# HomePageTest
-TestPage Before Go live 
+https://rihosepp31.github.io/rihosepp.github.io/

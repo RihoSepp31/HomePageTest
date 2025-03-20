@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0056b3; /* Jaluse taust on sinine */
+    color: white; /* Jaluse tekst on valge */
+}
+
+footer a {
+    color: #ffffff; /* Lingid on valged */
+    text-decoration: none; /* Eemaldab allajoonimise */
+    font-weight: bold;
+    margin: 0 10px; /* Lisab ruumi linkide vahele */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Allajoonimine ilmub hiirega üle viies */
+    color: #ffdd57; /* Hover-efekt: link muutub kollaseks */
+}
+

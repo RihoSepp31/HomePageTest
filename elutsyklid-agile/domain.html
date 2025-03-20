@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain-Driven Design (DDD)</title>
+    <link rel="stylesheet" href="..//css failid/Acceptance_test-driven.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'et', 
+                includedLanguages: 'en,fi,ru', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Domain-Driven Design (DDD)</h1>
+    </header>
+
+    <main>
+        <!-- Kirjeldus -->
+        <section>
+            <h2>Kirjeldus</h2>
+            <p>
+                Domain-Driven Design (DDD) on tarkvaraarenduslähenemine, mis keskendub <span class="highlight">äridomeeni</span> 
+                mõistmisele ja selle esindamisele koodis. DDD eesmärk on tihe koostöö arendajate ja äriekspertide vahel, 
+                et tagada süsteemi täpne ja järjepidev toimimine vastavalt ärinõuetele.
+            </p>
+        </section>
+
+        <!-- Joonis -->
+        <section>
+            <h2>Arendustsükli joonis</h2>
+            <p>
+                Allolev joonis illustreerib Domain-Driven Design tsüklit:
+            </p>
+            <img src="..//Pildid/domain.png" alt="Domain-Driven Design tsükkel" class="responsive-image">
+        </section>
+
+        <!-- Head ja vead -->
+        <section>
+            <h2>Head ja vead</h2>
+            <h3>Head küljed</h3>
+            <ul>
+                <li>Parandab arendajate ja äriekspertide vahelist suhtlust.</li>
+                <li>Võimaldab luua selgelt struktureeritud ja ärikeskseid rakendusi.</li>
+                <li>Toetab keerukate äriloogikate modelleerimist ja haldamist.</li>
+            </ul>
+
+            <h3>Halvad küljed</h3>
+            <ul>
+                <li>Rakendamine võib olla keeruline ilma põhjaliku domeeniteadmiseta.</li>
+                <li>Nõuab rohkem aega ja ressursse domeeni mõistmiseks ja modelleerimiseks.</li>
+                <li>Ei pruugi sobida väiksemate ja lihtsamate projektide jaoks.</li>
+            </ul>
+        </section>
+
+        <!-- Näide case-vahendist -->
+        <section>
+            <h2>Case-vahend: EventStorming</h2>
+            <p>
+                <strong>EventStorming</strong> on tööriist ja tehnika, mida kasutatakse sageli Domain-Driven Designi kontekstis. 
+                See võimaldab visuaalselt kaardistada äridomeeni sündmusi, et hõlbustada domeeni mõistmist ja arendustööd.
+            </p>
+            <h3>EventStorming omadused</h3>
+            <ul>
+                <li>Toetab äriekspertide ja arendajate tihedat koostööd.</li>
+                <li>Soodustab kiiret domeeni avastamist ja dokumenteerimist.</li>
+                <li>Aitab tuvastada äriprotsesside kitsaskohti ja võimalikke parendusi.</li>
+            </ul>
+            <h3>Näide EventStormingust:</h3>
+            <pre>
+1. Kogu meeskond koguneb ja algatab "sündmuste ajurünnaku".
+2. Kaardistatakse kõik olulised sündmused, mis äridomeenis toimuvad.
+3. Lisatakse täiendavad detailid, nagu osalejad ja vajalikud andmed.
+4. Lõpuks koostatakse töövoog, mida saab kasutada arenduse juhisena.
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Domain-driven_design" target="_blank">Allikas: Wikipedia</a> |
+            <a href="index.html">Tagasi</a>
+        </p>
+    </footer>
+</body>
+</html>
